@@ -10,7 +10,7 @@ class CategoryItem extends StatelessWidget {
 
   void selectCategory(BuildContext ctx) {
     Navigator.of(ctx).pushNamed(
-      '/category-books',
+      CategoryBooksScreen.routeName,
       arguments: {
         'id': id,
         'title': title,

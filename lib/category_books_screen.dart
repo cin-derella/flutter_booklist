@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CategoryBooksScreen extends StatelessWidget {
+  static const routeName = '/category-books';
   // final String categoryId;
   // final String categoryTitle;
 

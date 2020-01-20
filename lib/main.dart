@@ -22,9 +22,11 @@ class MyApp extends StatelessWidget {
                 ),
                 title: TextStyle(fontSize: 20,)
               )),
-      home: CategoriesScreen(),
+      //home: CategoriesScreen(),
+      initialRoute: '/',
       routes: {
-        '/category-books':(ctx)=>CategoryBooksScreen(),
+        '/' : (ctx)=>CategoriesScreen(),
+        CategoryBooksScreen.routeName:(ctx)=>CategoryBooksScreen(),
       },
     );
   }
