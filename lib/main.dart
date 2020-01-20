@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './category_books_screen.dart';
 import './categories_screen.dart';
 
 void main() => runApp(MyApp());
@@ -22,6 +23,9 @@ class MyApp extends StatelessWidget {
                 title: TextStyle(fontSize: 20,)
               )),
       home: CategoriesScreen(),
+      routes: {
+        '/category-books':(ctx)=>CategoryBooksScreen(),
+      },
     );
   }
 }
