@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './category_books_screen.dart';
+import './category_meals_screen.dart';
 import './categories_screen.dart';
 
 void main() => runApp(MyApp());
@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'BookList',
+      title: 'MealList',
       theme: ThemeData(
           primarySwatch: Colors.pink,
           accentColor: Colors.amber,
@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/' : (ctx)=>CategoriesScreen(),
-        CategoryBooksScreen.routeName:(ctx)=>CategoryBooksScreen(),
+        CategoryMealsScreen.routeName:(ctx)=>CategoryMealsScreen(),
       },
     );
   }
